@@ -4,8 +4,7 @@ var array = {}
 
 function theBeatlesPlay(musicians, instruments) {
   for (var i = 0; i < musicians.length; i ++) {
-    array.push([musicians[i]])
+    array[i] = musicians[i][instruments[i]]
   }
+  return array
 }
-
-for (var i = 1; i < 100; i++) {
